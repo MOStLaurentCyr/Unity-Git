@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 33606819305059890}
   - component: {fileID: 114690910113428528}
   - component: {fileID: 64838857878926860}
+  - component: {fileID: 114479423686901292}
   m_Layer: 0
   m_Name: Arch
   m_TagString: Untagged
@@ -111,6 +112,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _entityType: 0
+--- !u!114 &114479423686901292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956052933524940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b931faadef7f994c8635b6af9506df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114690910113428528
 MonoBehaviour:
   m_ObjectHideFlags: 1
