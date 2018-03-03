@@ -1,21 +1,25 @@
 using UnityEngine;
 using System.Collections;
-
+using System.Collections;
+using System.Collections.Generic;
 public class OnClickInstantiate : MonoBehaviour
 {
     public GameObject Prefab;
     public int InstantiateType;
     private string[] InstantiateTypeNames = {"Mine", "Scene"};
+    public GameObject equipPrefab;
+
+    public List<GameObject> createdObjects = new List<GameObject>();
 
     public bool showGui;
 
     void OnClick()
     {
-        if (!PhotonNetwork.inRoom)
-        {
-            // only use PhotonNetwork.Instantiate while in a room.
-            return;
-        }
+
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        Vector3 vectotPos = new Vector3(200, 200.5F, 0200);
+        cube.transform.localScale = new Vector3(100, 100, 100);
+        Instantiate(cube, vectotPos, Quaternion.identity );
 
         switch (InstantiateType)
         {
